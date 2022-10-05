@@ -1,0 +1,60 @@
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<div class="img-gradient">
+</div>
+  <img class="bg-img" src="\assets\images\mountain-image.jpg">
+<div class="row justify-content-center">
+    <div class="col-4">
+      <div class="card">
+        <div class="row">
+          <div class="col">
+            <div class="mycontent-left ">
+              <img class="center" src="\assets\images\Risen-One.png">
+            </div>
+          </div>
+          <div class="col ">
+            <div class="mycontent-right justify-content-center vertical-divider">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col mb-2">
+                    <div class="text-center header">
+                      <h1 style="font-family: 'Montserrat', sans-serif; font-size: large;">PROJECT TRACKING</h1>
+                      <h1 style="font-family: 'Montserrat', sans-serif; font-weight: bold;">PORTAL</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-2">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" #email="ngModel" [(ngModel)]="user.email" class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-2">
+                    <label for="password" class="form-label">Password:</label>
+                    <div class="input-group input-group-sm">
+                      <input [type]="user.showPassword ? 'text' : 'password'" id="password" name="password" #password="ngModel" [(ngModel)]="user.password" class="form-control form-control-sm">
+                      <button type="button" class="btn btn-outline-secondary" (click)="user.showPassword = !user.showPassword">
+                        <i class="bi" [ngClass]="{'bi-eye-fill': !user.showPassword, 'bi-eye-slash-fill': user.showPassword}"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-grid">
+                    <button type="button" (click)="signIn()" class="btn btn-sm btn-dark rounded-pill center" [disabled]="loading">
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+                      Log in
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
