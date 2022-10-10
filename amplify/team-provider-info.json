@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-rocportal-dev-134918-authRole",
-      "UnauthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-dev-134918-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-dev-134918-authRole",
+      "AuthRoleName": "amplify-rocportal-dev-151901-authRole",
+      "UnauthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-dev-151901-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-dev-151901-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-rocportal-dev-134918-deployment",
-      "UnauthRoleName": "amplify-rocportal-dev-134918-unauthRole",
-      "StackName": "amplify-rocportal-dev-134918",
-      "StackId": "arn:aws:cloudformation:us-east-1:966173609480:stack/amplify-rocportal-dev-134918/1a69aed0-39de-11ed-a346-0e4136615187",
-      "AmplifyAppId": "dy94fhaigl2pe"
+      "DeploymentBucketName": "amplify-rocportal-dev-151901-deployment",
+      "UnauthRoleName": "amplify-rocportal-dev-151901-unauthRole",
+      "StackName": "amplify-rocportal-dev-151901",
+      "StackId": "arn:aws:cloudformation:us-east-1:966173609480:stack/amplify-rocportal-dev-151901/c96c30c0-48d8-11ed-864c-0e5cb4e41209",
+      "AmplifyAppId": "d3eeaeokch6ib7"
     },
     "categories": {
       "auth": {
