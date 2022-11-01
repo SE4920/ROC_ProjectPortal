@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
-import { IUser, CognitoService } from '../cognito.service';
+import { IUser, CognitoService, IProject } from '../cognito.service';
+
 
 @Component({
   selector: 'app-project-creation',
   templateUrl: './project-creation.component.html',
   styleUrls: ['./project-creation.component.css'],
 })
-export class ProjectCreationComponent implements OnInit {
 
+export class ProjectCreationComponent implements OnInit {
+  project: IProject;
   loading: boolean;
   user: IUser;
 
   constructor(private cognitoService: CognitoService) {
     this.loading = false;
     this.user = {} as IUser;
+    this.project = {} as IProject;
   }
 
   public ngOnInit(): void {
@@ -22,6 +25,9 @@ export class ProjectCreationComponent implements OnInit {
     .then((user: any) => {
       this.user = user.attributes;
     });
+  }
+  public createProject(): void {     
+    this.loading = true;   
   }
 
   public update(): void {
