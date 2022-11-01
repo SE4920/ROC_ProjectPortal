@@ -12,6 +12,13 @@ export interface IUser {
   name: string;
 }
 
+export interface IProject {
+  projectname: string;
+  projectmanager: string;
+  Description: string;
+
+}
+
 @Injectable({
   providedIn: 'root',
 })
