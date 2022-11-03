@@ -1,4 +1,51 @@
 {
+  "shela": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rocportal-shela-230928-authRole",
+      "UnauthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-shela-230928-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-shela-230928-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-rocportal-shela-230928-deployment",
+      "UnauthRoleName": "amplify-rocportal-shela-230928-unauthRole",
+      "StackName": "amplify-rocportal-shela-230928",
+      "StackId": "arn:aws:cloudformation:us-east-2:966173609480:stack/amplify-rocportal-shela-230928/97b5d320-48f0-11ed-b4e8-020a7e28d426",
+      "AmplifyAppId": "d1dd8921zrtdcz"
+    },
+    "categories": {
+      "auth": {
+        "rocportal40559dab": {}
+      },
+      "storage": {
+        "SampleProject": {
+          "tableName": "SampleProject",
+          "region": "us-east-2",
+          "arn": "arn:aws:dynamodb:us-east-2:966173609480:table/SampleProject",
+          "partitionKeyName": "Project_Acronym",
+          "partitionKeyType": "S"
+        }
+      },
+      "function": {
+        "rocprojectportal88390032": {
+          "deploymentBucketName": "amplify-rocportal-shela-230928-deployment",
+          "s3Key": "amplify-builds/rocprojectportal88390032-422f4648423176664669-build.zip"
+        },
+        "rocprojectportala507dba7": {
+          "deploymentBucketName": "amplify-rocportal-shela-230928-deployment",
+          "s3Key": "amplify-builds/rocprojectportala507dba7-4a4e59322f7532353853-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1dd8921zrtdcz",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "DB1": {},
+        "BSapi": {}
+      }
+    }
+  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-rocportal-dev-134918-authRole",
