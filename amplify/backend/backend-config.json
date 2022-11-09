@@ -33,55 +33,5 @@
       "providerPlugin": "awscloudformation",
       "type": "manual"
     }
-  },
-  "storage": {
-    "SampleProject": {
-      "service": "DynamoDB",
-      "serviceType": "imported",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": []
-    }
-  },
-  "function": {
-    "rocprojectportal88390032": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "rocprojectportala507dba7": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "api": {
-    "DB1": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "rocprojectportal88390032",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        }
-      ]
-    },
-    "BSapi": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "rocprojectportala507dba7",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        }
-      ]
-    }
   }
 }
