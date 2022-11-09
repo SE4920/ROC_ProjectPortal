@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/rybak": {
+      "name": "/rybak",
+      "lambdaFunction": "rybakLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

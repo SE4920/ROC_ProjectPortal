@@ -1,0 +1,14 @@
+{
+  "resourceName": "rocTestTable",
+  "tableName": "rocTestTable",
+  "partitionKey": {
+    "fieldName": "ProjectID",
+    "fieldType": "number"
+  },
+  "sortKey": {
+    "fieldName": "FullName",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
