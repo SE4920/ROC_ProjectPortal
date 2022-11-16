@@ -5,7 +5,6 @@
 
 <div class="back">
 </div>
-<app-navbar></app-navbar>
 
 <div class="row justify-content-center">
     <div class="col-4">
@@ -39,9 +38,7 @@
           //status update table inside Status update expansion panel
           <table>
             <tr ng-repeat="x in status | orderBy : 'Date'">
-              <td>{{ x.Date }}</td>
-              <td>{{ x.Name }}</td>
-              <td>{{ x.Report }}</td> //need to make a link to it (down below)
+              
             </tr>
           </table>
         </div>

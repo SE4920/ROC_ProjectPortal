@@ -15,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProjectCreationComponent } from './project-creation/project-creation.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectViewComponent } from './project-view/project-view.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     DashboardComponent,
     ProjectCreationComponent,
+    ProjectViewComponent
+
   ],
   imports: [
     BrowserModule,
