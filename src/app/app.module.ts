@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion'; 
 import { MatTableModule } from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -32,7 +33,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     NoopAnimationsModule,
     MatExpansionModule,
     MatTableModule,
-  ],
+    MatSortModule
+],
   providers: [
   ],
   bootstrap: [
@@ -41,3 +43,4 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 })
 export class AppModule {
 }
+

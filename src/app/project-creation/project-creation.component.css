@@ -58,7 +58,6 @@ img {
 	border-radius: 10px;
 }
 .labelOne{
-    
     position: fixed;
     top: 60%;
     left: 50%;
@@ -66,7 +65,17 @@ img {
     height: 70%;
     width: 75%;
     transform: translate(-50%, -50%);
-    border-radius: 25px;
+    border-radius: 15px;
+    border-top: none;
     margin-bottom: 50px;
     z-index: 1;
+}
+
+.textbox{
+    top: -50px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #030000 2px;
 }
