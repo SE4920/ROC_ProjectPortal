@@ -1,12 +1,13 @@
 img {
-    height: 150px;
-    width: 150px;
+    position:absolute;
+    z-index: -1; 
+    width: 100%; height: 100%
 }
-.back {
+.img-gradient {
     position: absolute;
     width: 100%; height: 100%;
     background: linear-gradient(#fbc900 , #ed8500);
-    opacity: .8;
+    opacity: .6;
 }
 .card {
     position: fixed;
@@ -21,7 +22,7 @@ img {
 
 .center {
     display: block;
-    margin-left: auto;
+    margin-left:  auto;
     margin-right: auto;
     width: 50%;
 }
@@ -39,4 +40,42 @@ img {
     height: 25vh;
     width: 75%;
     margin: 0 auto;  
+}
+.drop-zone {
+	max-width: 200px;
+	height: 200px;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	cursor: pointer;
+	color: #cccccc;
+	border: 4px dashed #009578;
+	border-radius: 10px;
+}
+.labelOne{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    right: 50%;
+    height: 70%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border-top: none;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.textbox{
+    top: -50px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #030000 2px;
 }
