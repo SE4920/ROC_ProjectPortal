@@ -1,33 +1,16 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import Amplify, { Auth } from 'aws-amplify';
-import {MatTableModule} from '@angular/material/table'
-import {DataSource} from '@angular/cdk/collections';
 
 import { environment } from '../environments/environment';
 
 export interface IUser {
-  email: string,
-  password: string,
-  showPassword: boolean,
-  code: string,
-  name: string
+  email: string;
+  password: string;
+  showPassword: boolean;
+  code: string;
+  name: string;
 }
-
-export interface IProject {
-  projectname: string,
-  projectmanager: string,
-  Description: string
-
-}
-
-export interface IDashboard {
-  Projectname: string,
-  FullName: string,
-  Contract: string,
-  Status: string
-}
-
 
 @Injectable({
   providedIn: 'root',

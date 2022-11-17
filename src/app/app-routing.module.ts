@@ -6,7 +6,6 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProjectCreationComponent } from './project-creation/project-creation.component';
-import { ProjectViewComponent } from './project-view/project-view.component';
 
 
 const routes: Routes = [
@@ -30,10 +29,6 @@ const routes: Routes = [
   {
     path: 'project-creation',
     component: ProjectCreationComponent,
-  },
-  {
-    path: 'project-view', 
-    component: ProjectViewComponent,
   },
   {
     path: '**',

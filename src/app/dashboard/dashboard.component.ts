@@ -1,22 +1,6 @@
-import { NgModule, Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { CommonModule } from '@angular/common';
-
-import { MatTableDataSource } from '@angular/material/table';
-
-import { FormsModule } from '@angular/forms'; 
-
-import { IUser, CognitoService, IProject, IDashboard } from '../cognito.service';
-
-import { MatExpansionModule } from '@angular/material/expansion'
-
-import { MatTableModule } from '@angular/material/table';
-
-import { BehaviorSubject, Observable, of } from 'rxjs';
-
-import { switchMap, delay } from 'rxjs/operators';
-
-import { PageEvent } from '@angular/material/paginator';
+import { IUser, CognitoService } from '../cognito.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -24,30 +8,13 @@ import { PageEvent } from '@angular/material/paginator';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  project: IProject;
+
   loading: boolean;
   user: IUser;
-
-  displayedColumns: string[] = [
-    'Projectname',
-    'FullName',
-    'Contract',
-    'Status'
-  ]
-
-  Empdata: IDashboard[] = [{
-    Projectname: "Project1",
-    FullName: "Full Name of NRM",
-    Contract: "Contract",
-    Status: "In Progress"
-  }]
-
-  dataSource = new MatTableDataSource(this.Empdata)
 
   constructor(private cognitoService: CognitoService) {
     this.loading = false;
     this.user = {} as IUser;
-    this.project = {} as IProject;
   }
 
   public ngOnInit(): void {
@@ -73,9 +40,5 @@ export class DashboardComponent implements OnInit {
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
-  
+
 }
-
-
-
-
