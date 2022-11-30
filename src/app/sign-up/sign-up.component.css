@@ -41,7 +41,10 @@ img {
     width: 75%;
     margin: 0 auto;  
 }
+
 .btn-success {
-    background-color: #ed8500;
-    border-color: #ed8500;
+    --bs-btn-bg: #ed8500;
+    --bs-btn-hover-bg: #fbc900;
+    --bs-btn-border-color: #ed8500;
+    --bs-btn-hover-border-color: #fbc900;
 }
