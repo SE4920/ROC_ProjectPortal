@@ -10,7 +10,65 @@
 <div class="row justify-content-center">
     <div class="col-4">
       <div class="card">
-        
+        <div class="row">
+          <div class="labelOne">
+            <h1 style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Create Project Form</h1>
+            <div class="row">
+              <div class="col mb-2">
+                  <label for="ProjectName" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project Name:</label>
+                  <div class="textbox">
+                    <input type="text" id="ProjectName" style="border: none" name="ProjectName" class="form-control form-control-sm">
+                  </div>
+                </div>
+              <div class="col mb-2">
+                <label for="ProjectDescription" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project Acronym:</label>
+                <div class="textbox">
+                  <input type="text" id="ProjectAcronym" style="border: none" name="ProjectAcronym"  class="form-control form-control-sm">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-2">
+                <label for="ProjectDescription" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Contract Type:</label>
+                <div class="textbox">
+                  <input type="text" id="ContractType" style="border: none" name="ContractType"  class="form-control form-control-sm">
+                </div>
+              </div>
+              <div class="col mb-2">
+                <label for="ProjectDescription" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project Status:</label>
+                <div class="textbox">
+                  <input type="text" id="ProjectStatus" style="border: none" name="ProjectStatus"  class="form-control form-control-sm">
+                </div>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col mb-2">
+                  <label for="ProjectDescription" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project ID:</label>
+                  <div class="textbox">
+                    <input type="text" id="ProjectID" style="border: none" name="ProjectID"  class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="col mb-2">
+                  <label for="ProjectDescription" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project Owner:</label>
+                  <div class="textbox">
+                    <input type="text" id="ProjectOwner" style="border: none" name="ProjectOwner"  class="form-control form-control-sm">
+                  </div>
+                </div>
+              </div>
+            <br>
+            <div class="dropzone">
+              <input type="file" #fileDropRef id="fileDropRef" >
+           </div>
+           <div class="row">
+            <div class="row">
+              <div class="col d-grid">
+                  <button type="button" class="btn btn-sm btn-dark rounded-pill center" [disabled]="loading">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+                     Project Create
+                  </button>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
