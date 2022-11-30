@@ -26,11 +26,11 @@ img {
     width: 50%;
 }
 .card-body {
-    width: 200%;
+    width: 150%;
     height: 100%;
     margin: 25% auto;
     position: relative;
-    transform: translate(-25%, 15%);
+    transform: translate(-17%, 10%);
 }
 .vertical-divider {
     border-left: 5px solid black;
