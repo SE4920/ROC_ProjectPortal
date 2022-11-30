@@ -41,6 +41,31 @@ img {
     margin: 0 auto;  
 }
 
+.tablecenter{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    width: 80%;
+    max-height: 80%;
+}
+
+.thead-dark{
+    --bs-table-bg: #E0AA51;
+    color: ghostwhite;
+    height: 70px;
+    font-size:x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+.table{
+    border-bottom: black;
+    border-radius: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+.table tr{
+    height: 70px;
+    vertical-align: middle;
+}
+
 
 
 
