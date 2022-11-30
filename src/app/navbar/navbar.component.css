@@ -12,7 +12,7 @@
     top:0;
     left: 0;
     right: 0;
-    
+    transform: translate(0%, 0%);
     margin: auto;
 
     font-family: 'Montserrat', sans-serif; font-size: 35px; font-weight: bold;

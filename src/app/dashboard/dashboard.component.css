@@ -9,7 +9,7 @@ img {
     opacity: .8;
 }
 .card {
-    position: fixed;
+    position: absolute;
     top: 55%;
     left: 50%;
     height: 70%;
