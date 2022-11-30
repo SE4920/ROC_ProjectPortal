@@ -40,3 +40,24 @@ img {
     width: 75%;
     margin: 0 auto;  
 }
+.textbox{
+    top: -50px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #030000 2px;
+}
+.labelOne{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    right: 50%;
+    height: 70%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border-top: none;
+    margin-bottom: 50px;
+    z-index: 1;
+}

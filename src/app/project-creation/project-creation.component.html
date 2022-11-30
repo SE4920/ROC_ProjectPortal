@@ -10,7 +10,45 @@
 <div class="row justify-content-center">
     <div class="col-4">
       <div class="card">
-        
+        <div class="row">
+          <div class="labelOne">
+            <h1 style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Create Project Form</h1>
+            <div class="row">
+              <div class="col mb-2">
+                  <label for="ProjectName" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project Name:</label>
+                  <div class="textbox">
+                    <input type="text" id="ProjectName" style="border: none" name="ProjectName" class="form-control form-control-sm">
+                  </div>
+                </div>
+              <div class="col mb-2">
+                <label for="ProjectDescription" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project Members:</label>
+                <div class="textbox">
+                  <input type="text" id="ProjectDescription" style="border: none" name="ProjectDescription"  class="form-control form-control-sm">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-2">
+                  <label for="ProjectDescription" class="form-label"style="font-family: 'Montserrat', sans-serif; font-size: large;">Project Description:</label>
+                  <div class="textbox">
+                    <textarea type="text" style="border: none; height: 110%; width: 75%;"id="ProjectDescription" name="ProjectDescription" class="form-control form-control-sm"></textarea>
+                  </div>
+                </div>
+            </div>
+            <br>
+            <div class="dropzone">
+              <input type="file" #fileDropRef id="fileDropRef" >
+           </div>
+           <div class="row">
+            <div class="row">
+              <div class="col d-grid">
+                  <button type="button" class="btn btn-sm btn-dark rounded-pill center" [disabled]="loading">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></span>
+                     Project Create
+                  </button>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
