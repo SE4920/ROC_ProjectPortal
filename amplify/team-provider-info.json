@@ -15,47 +15,40 @@
       "auth": {
         "rocportal40559dab": {}
       },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d1dd8921zrtdcz",
-          "type": "manual"
+      "storage": {
+        "rocTestTable": {},
+        "Dashboard": {
+          "tableName": "Dashboard",
+          "region": "us-east-2",
+          "arn": "arn:aws:dynamodb:us-east-2:966173609480:table/Dashboard",
+          "partitionKeyName": "email",
+          "partitionKeyType": "S"
         }
       },
       "function": {
         "rybakLambda": {
           "deploymentBucketName": "amplify-rocportal-shela-230928-deployment",
           "s3Key": "amplify-builds/rybakLambda-5a703769777959644953-build.zip"
+        },
+        "rocprojectportaladb5954f": {
+          "deploymentBucketName": "amplify-rocportal-shela-230928-deployment",
+          "s3Key": "amplify-builds/rocprojectportaladb5954f-616f4f724e4d3964795a-build.zip"
+        },
+        "SampleLambda": {
+          "deploymentBucketName": "amplify-rocportal-shela-230928-deployment",
+          "s3Key": "amplify-builds/SampleLambda-4c4d6e57387963476833-build.zip"
         }
-      },
-      "storage": {
-        "rocTestTable": {}
-      },
-      "api": {
-        "rybakAPI": {}
-      }
-    }
-  },
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-rocportal-dev-134918-authRole",
-      "UnauthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-dev-134918-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::966173609480:role/amplify-rocportal-dev-134918-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-rocportal-dev-134918-deployment",
-      "UnauthRoleName": "amplify-rocportal-dev-134918-unauthRole",
-      "StackName": "amplify-rocportal-dev-134918",
-      "StackId": "arn:aws:cloudformation:us-east-1:966173609480:stack/amplify-rocportal-dev-134918/1a69aed0-39de-11ed-a346-0e4136615187",
-      "AmplifyAppId": "dy94fhaigl2pe"
-    },
-    "categories": {
-      "auth": {
-        "rocportal40559dab": {}
       },
       "hosting": {
         "amplifyhosting": {
-          "appId": "dy94fhaigl2pe",
+          "appId": "d1dd8921zrtdcz",
           "type": "manual"
         }
+      },
+      "api": {
+        "rybakAPI": {},
+        "api143ce26c": {},
+        "SampleAPI": {}
       }
     }
   }
