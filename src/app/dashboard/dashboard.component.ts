@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { IUser, CognitoService } from '../cognito.service';
+import { API } from 'aws-amplify';
 
 @Component({
   selector: 'app-dashboard',
@@ -39,6 +40,21 @@ export class DashboardComponent implements OnInit {
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+  }
+
+  params = {
+    headers: {},
+    response: true,
+    queryStringParameters: {}
+  }
+
+  getProjects(){
+    API.get("dashboardAPI2", "/dashboard", this.params).then(response => {
+      
+
+    }).catch(error => {
+      console.log(error)
+    })
   }
 
 }

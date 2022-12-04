@@ -1,0 +1,10 @@
+{
+  "resourceName": "dashboardTable",
+  "tableName": "dashboardTable",
+  "partitionKey": {
+    "fieldName": "ProjectID",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

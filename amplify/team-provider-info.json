@@ -1,0 +1,38 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify4526f3e6555b4-staging-162300-authRole",
+      "UnauthRoleArn": "arn:aws:iam::966173609480:role/amplify-amplify4526f3e6555b4-staging-162300-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::966173609480:role/amplify-amplify4526f3e6555b4-staging-162300-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify4526f3e6555b4-staging-162300-deployment",
+      "UnauthRoleName": "amplify-amplify4526f3e6555b4-staging-162300-unauthRole",
+      "StackName": "amplify-amplify4526f3e6555b4-staging-162300",
+      "StackId": "arn:aws:cloudformation:us-east-2:966173609480:stack/amplify-amplify4526f3e6555b4-staging-162300/eb934a70-73ef-11ed-b243-069e2a0fa4c6",
+      "AmplifyAppId": "d305e6p45xs6vv",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplify4526f3e6555b4-staging-162300-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "rocprojectportal7f302652": {}
+      },
+      "function": {
+        "dashboardLambda": {
+          "deploymentBucketName": "amplify-amplify4526f3e6555b4-staging-162300-deployment",
+          "s3Key": "amplify-builds/dashboardLambda-33367647652b4b2b6c5a-build.zip"
+        },
+        "dashboardLambda2": {
+          "deploymentBucketName": "amplify-amplify4526f3e6555b4-staging-162300-deployment",
+          "s3Key": "amplify-builds/dashboardLambda2-752f4334763178686e4a-build.zip"
+        }
+      },
+      "storage": {
+        "dashboardTable": {}
+      },
+      "api": {
+        "dashboardAPI": {},
+        "dashboardAPI2": {}
+      }
+    }
+  }
+}

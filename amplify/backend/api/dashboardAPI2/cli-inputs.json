@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/dashboard": {
+      "name": "/dashboard",
+      "lambdaFunction": "dashboardLambda2",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
