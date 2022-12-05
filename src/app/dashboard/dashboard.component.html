@@ -3,10 +3,50 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-<div class="back">
-</div>
-<app-navbar></app-navbar>
 
+<app-navbar></app-navbar>
+<div class="row justify-content-center">
+  <div class="col-4">
+    <div class="card">
+      <table mat-table [dataSource]="dataSource" class="table tablecenter">
+        <!-- Date Column -->
+        <ng-container matColumnDef="ProjectID">
+          <th mat-header-cell *matHeaderCellDef class="thead-dark"> Project </th>
+          <td mat-cell (click)=getprojectView() scope="row" style="text-decoration: underline; cursor: pointer;" *matCellDef="let element"> {{element.ProjectID}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="ProjectName">
+          <th mat-header-cell *matHeaderCellDef class="thead-dark"> Full Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.ProjectName}} </td>
+        </ng-container>
+
+        <!-- Report Column -->
+        <ng-container matColumnDef="Contract">
+          <th mat-header-cell *matHeaderCellDef class="thead-dark"> Contract </th>
+            <td mat-cell *matCellDef="let element"> {{element.Contract}} </td>
+        </ng-container>
+        <ng-container matColumnDef="ProjectNumber">
+          <th mat-header-cell *matHeaderCellDef class="thead-dark"> # </th>
+          <td mat-cell *matCellDef="let element"> {{element.ProjectNumber }} </td>
+        </ng-container>
+        <ng-container matColumnDef="Status">
+          <th mat-header-cell *matHeaderCellDef class="thead-dark"> Status </th>
+          <td mat-cell *matCellDef="let element"> {{element.Status}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator [pageSizeOptions]="[6]"
+                     showFirstLastButtons
+                     aria-label="Select page of report elements">
+          </mat-paginator>
+      </div>
+  </div>
+</div>
+
+<!--
 <div class="row justify-content-center">
     <div class="col-4">
       <div class="card">
@@ -34,4 +74,4 @@
       <button (click)="getProjects()">Get Projects</button>
       </div>
     </div>
-  </div>
+  </div>-->

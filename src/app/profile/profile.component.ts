@@ -18,10 +18,7 @@ export class ProfileComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.cognitoService.getUser()
-    .then((user: any) => {
-      this.user = user.attributes;
-    });
+
   }
 
   public update(): void {

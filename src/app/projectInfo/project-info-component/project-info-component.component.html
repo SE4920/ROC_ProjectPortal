@@ -1,0 +1,37 @@
+<html>
+<div class="project-box-container">
+    <h2 class="project-info-header">Project Information</h2>
+    <div class="info-container">    
+        <!-- Started -->
+        <div class="started">
+            <h5 class="opacity"><b>Started: </b></h5>
+            <ng-container matColumnDef="Date">
+                <p mat-cell *matCellDef="let element"> {{element.date}} </p>
+            </ng-container>
+        </div>
+        
+        <!-- Status -->
+        <div class="status">
+            <h5 class="opacity"><b>Status: </b></h5>
+        </div>
+
+        <!-- Description -->
+        <div class="description">
+            <h5 class="opacity"><b>Description of Project: </b></h5>
+        </div>
+        
+        <!-- Owner -->
+        <div class="owner">
+            <h5 class="opacity"><b>Product Owner: </b></h5>
+        </div>
+
+        <!-- Manager -->
+        <div class="manager">
+            <h5 class="opacity"><b>Project Manager: </b></h5>
+        </div>    
+    </div>
+</div>
+<div class="space"></div> 
+<app-image-documentation></app-image-documentation>
+
+</html>

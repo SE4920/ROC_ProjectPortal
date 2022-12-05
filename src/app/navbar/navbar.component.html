@@ -4,8 +4,8 @@
     <a class="navbar-brand ml-auto" href="/dashboard">
       <img src="\assets\images\Risen-One.png" style="height: 200px; width: 200px;">
     </a>
-    <div class = "me-auto ml-0" >
-        Welcome, XXXX
+    <div>
+       Welcome, {{shortenedName}}
     </div>
     <div class="nav-item dropdown ms-auto ">
         <button class="navbar-toggler navbar-light" type="button" (click)="toggleNavbar()">
@@ -14,11 +14,11 @@
           <div class="collapse navbar-collapse"
           [ngClass]="{ 'show': navbarOpen }">
        <ul class="navbar-nav mr-auto">
-         <li class="nav-item">
-            <a class="nav-link" href="/project-creation" style=" font-size: 15px; font-weight: bold;">Add Project</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/dashboard" style=" font-size: 15px; font-weight: bold;">Dashboard</a>
          </li>
          <li class="nav-item">
-          <a class="nav-link" href="/signUp" style=" font-size: 15px; font-weight: bold;">Add New User</a>
+            <a class="nav-link" href="/project-creation" style=" font-size: 15px; font-weight: bold;">Add Project</a>
          </li>
          <li class="nav-item">
             <a class="nav-link" href="#" style="font-size: 15px; font-weight: bold;">LogOut</a>

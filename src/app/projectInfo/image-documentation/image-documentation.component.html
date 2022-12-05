@@ -1,0 +1,29 @@
+<div class="border">
+    <div
+    class="title"
+    (click)="onClick()">
+        <div class="title-left">
+            <p>Images & Documentation</p>
+        </div>
+        <div class="title-right">
+            <p>{{ isExpanded ? '-' : '+' }}</p>
+        </div>
+        <hr>
+    </div>
+    
+    <div *ngIf="isExpanded" class="info" [@View]>
+        <div *ngfor="let name of imgNames">
+            <!-- doesn't work now but will do what below does  -->
+            <img src={{name}}>
+        </div>
+        <div *ngfor="let name of imgNames">
+            <!-- doesn't work now but will do what below does  -->
+            <p>{{name}}</p>
+        </div>
+        <div class="but">
+            <div class="Drag" style="margin-top:10px;">Drag and Drop Files</div>
+        </div>
+            <br>
+            <div class="View" style="text-decoration:underline; font-size: smaller; font-weight: 400;">Click to Browse Files</div>
+    </div>
+</div>
